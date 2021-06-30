@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.red-outline {
+	outline: 2px red solid
+}
+
+
+.blue-outline {
+	outline: 2px blue solid
+}
+
+.orange-outline { 
+	outline: 2px orange solid; 
+ }
