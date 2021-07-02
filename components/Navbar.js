@@ -3,7 +3,7 @@ import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const navigation = [
-	{ name: "Projects", href: "#" },
+	{ name: "Projects", href: "/projects" },
 	// { name: 'About Me', href: '#' },
 ];
 
@@ -56,7 +56,7 @@ export default function Navbar() {
 
 									<span className="inline-flex rounded-md shadow">
 										<a
-											href="#"
+											href="/contact"
 											className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50">
 											Contact Me
 										</a>
