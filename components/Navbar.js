@@ -57,7 +57,7 @@ export default function Navbar() {
 									<span className="inline-flex rounded-md shadow">
 										<a
 											href="/contact"
-											className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50">
+											className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50">
 											Contact Me
 										</a>
 									</span>
@@ -111,7 +111,7 @@ export default function Navbar() {
 									</div>
 									<a
 										href="#"
-										className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
+										className="block w-full px-5 py-3 text-center font-medium  text-blue-600 bg-gray-50 hover:bg-gray-100">
 										Contact Me
 									</a>
 								</div>

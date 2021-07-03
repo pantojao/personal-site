@@ -39,7 +39,7 @@ const Services = () => {
 				</Transition>
 			</div>
 
-			<button className="self-start md:grid-row-start-2 md:col-span-1 inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+			<button className="self-start md:grid-row-start-2 md:col-span-1 inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 				<a href="/contact">Contact Me</a>
 			</button>
 		</div>
