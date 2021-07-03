@@ -49,22 +49,22 @@ const navigation = [
 			</svg>
 		),
 	},
-	{
-		name: "Dribbble",
-		href: "#",
-		icon: (props) => (
-			<svg
-				fill="currentColor"
-				viewBox="0 0 24 24"
-				{...props}>
-				<path
-					fillRule="evenodd"
-					d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-					clipRule="evenodd"
-				/>
-			</svg>
-		),
-	},
+	// {
+	// 	name: "Dribbble",
+	// 	href: "#",
+	// 	icon: (props) => (
+	// 		<svg
+	// 			fill="currentColor"
+	// 			viewBox="0 0 24 24"
+	// 			{...props}>
+	// 			<path
+	// 				fillRule="evenodd"
+	// 				d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+	// 				clipRule="evenodd"
+	// 			/>
+	// 		</svg>
+	// 	),
+	// },
 ];
 
 const ContactForm = () => {
@@ -80,16 +80,12 @@ const ContactForm = () => {
 					<h3 className="text-lg font-medium text-black">
 						Contact information
 					</h3>
-					<p className="mt-6 text-base text-teal-50 max-w-3xl">
-						Nullam risus blandit ac aliquam justo ipsum.
-						Quam mauris volutpat massa dictumst amet. Sapien
-						tortor lacus arcu.
-					</p>
+
 					<dl className="mt-8 space-y-6">
 						<dt>
 							<span className="sr-only">Phone number</span>
 						</dt>
-						<dd className="flex text-base text-teal-50">
+						<dd className="flex text-base ">
 							<PhoneIcon
 								className="flex-shrink-0 w-6 h-6 text-teal-200"
 								aria-hidden="true"
@@ -101,7 +97,7 @@ const ContactForm = () => {
 						<dt>
 							<span className="sr-only">Email</span>
 						</dt>
-						<dd className="flex text-base text-teal-50">
+						<dd className="flex text-base ">
 							<MailIcon
 								className="flex-shrink-0 w-6 h-6 text-teal-200"
 								aria-hidden="true"
@@ -117,7 +113,7 @@ const ContactForm = () => {
 								<a
 									key={item.name}
 									href={item.href}
-									className="text-teal-400 hover:text-teal-500">
+									className="text-teal-400 hover:0">
 									<span className="sr-only">
 										{item.name}
 									</span>
@@ -133,8 +129,8 @@ const ContactForm = () => {
 
 				{/* Contact form */}
 				<div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
-					<h3 className="text-lg font-medium text-warm-gray-900">
-						Send us a message
+					<h3 className="text-lg font-medium">
+						Send me a message
 					</h3>
 					<form
 						action="#"
@@ -143,7 +139,7 @@ const ContactForm = () => {
 						<div>
 							<label
 								htmlFor="first_name"
-								className="block text-sm font-medium text-warm-gray-900">
+								className="block text-sm font-medium">
 								First name
 							</label>
 							<div className="mt-1">
@@ -152,14 +148,14 @@ const ContactForm = () => {
 									name="first_name"
 									id="first_name"
 									autoComplete="given-name"
-									className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md"
+									className="py-3 px-4 block w-full border border-gray-300 shadow-sm focus:ring-teal-500 focus:border-blue-500 rounded-md"
 								/>
 							</div>
 						</div>
 						<div>
 							<label
 								htmlFor="last_name"
-								className="block text-sm font-medium text-warm-gray-900">
+								className="block text-sm font-medium text-gray-900">
 								Last name
 							</label>
 							<div className="mt-1">
@@ -168,23 +164,23 @@ const ContactForm = () => {
 									name="last_name"
 									id="last_name"
 									autoComplete="family-name"
-									className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md"
+									className="py-3 px-4 block w-full shadow-sm  focus:ring-blue-500 focus:border-blue-500 border border-gray-300 rounded-md"
 								/>
 							</div>
 						</div>
 						<div>
 							<label
 								htmlFor="email"
-								className="block text-sm font-medium text-warm-gray-900">
+								className="block text-sm font-medium">
 								Email
 							</label>
-							<div className="mt-1">
+							<div className="mt-1 border-red-600">
 								<input
 									id="email"
 									name="email"
 									type="email"
 									autoComplete="email"
-									className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md"
+									className="py-3 px-4 block w-full shadow-sm focus:ring-teal-500 focus:border-teal-500 border border-gray-300 rounded-md"
 								/>
 							</div>
 						</div>
@@ -192,12 +188,12 @@ const ContactForm = () => {
 							<div className="flex justify-between">
 								<label
 									htmlFor="phone"
-									className="block text-sm font-medium text-warm-gray-900">
+									className="block text-sm font-medium">
 									Phone
 								</label>
 								<span
 									id="phone-optional"
-									className="text-sm text-warm-gray-500">
+									className="text-sm">
 									Optional
 								</span>
 							</div>
@@ -207,7 +203,7 @@ const ContactForm = () => {
 									name="phone"
 									id="phone"
 									autoComplete="tel"
-									className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md"
+									className="py-3 px-4 block w-full shadow-sm focus:ring-teal-500 focus:border-teal-500 border border-gray-300 rounded-md"
 									aria-describedby="phone-optional"
 								/>
 							</div>
@@ -215,28 +211,28 @@ const ContactForm = () => {
 						<div className="sm:col-span-2">
 							<label
 								htmlFor="subject"
-								className="block text-sm font-medium text-warm-gray-900">
+								className="block text-sm font-medium">
 								Subject
 							</label>
+
 							<div className="mt-1">
 								<input
 									type="text"
 									name="subject"
 									id="subject"
-									className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md"
+									className="py-3 px-4 block w-full shadow-sm focus:ring-teal-500 focus:border-teal-500 border border-gray-300 rounded-md"
 								/>
 							</div>
 						</div>
+
 						<div className="sm:col-span-2">
 							<div className="flex justify-between">
 								<label
 									htmlFor="message"
-									className="block text-sm font-medium text-warm-gray-900">
+									className="block text-sm font-medium">
 									Message
 								</label>
-								<span
-									id="message-max"
-									className="text-sm text-warm-gray-500">
+								<span id="message-max" className="text-sm">
 									Max. 500 characters
 								</span>
 							</div>
@@ -245,7 +241,7 @@ const ContactForm = () => {
 									id="message"
 									name="message"
 									rows={4}
-									className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border border-warm-gray-300 rounded-md"
+									className="py-3 px-4 block w-full shadow-sm focus:ring-teal-500 focus:border-teal-500 border border-gray-300rounded-md"
 									aria-describedby="message-max"
 									defaultValue={""}
 								/>
@@ -254,7 +250,7 @@ const ContactForm = () => {
 						<div className="sm:col-span-2 sm:flex sm:justify-end">
 							<button
 								type="submit"
-								className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-teal-500 hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:w-auto">
+								className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:w-auto">
 								Submit
 							</button>
 						</div>
