@@ -2,16 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .red-outline {
-	outline: 2px red solid
+	outline: 2px red solid;
 }
-
 
 .blue-outline {
-	outline: 2px blue solid
+	outline: 2px blue solid;
 }
 
-.orange-outline { 
-	outline: 2px orange solid; 
- }
+.orange-outline {
+	outline: 2px orange solid;
+}
+
+.book-shadow {
+	--box-shadow-color: #fde68a;
+	box-shadow: 0px 0px 17px var(--box-shadow-color);
+}
+
+.nasa-shadow {
+	--box-shadow-color: #6366f1;
+	box-shadow: 0px 0px 17px var(--box-shadow-color);
+}
+
+.pac-shadow {
+	--box-shadow-color: #f87171;
+	box-shadow: 0px 0px 17px var(--box-shadow-color);
+}
+
+.beer-shadow {
+	--box-shadow-color: #fcd34d;
+	box-shadow: 0px 0px 17px var(--box-shadow-color);
+}
