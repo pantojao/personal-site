@@ -1,47 +1,62 @@
-import {
-	iron,
-	glacier,
-	ent,
-} from "../../assets/portfolioImages/exports";
-import React, { useRef } from "react";
-import useOnScreen from "../onScreen";
-import { Transition } from "@headlessui/react";
-
-import Image from "next/image";
-const items = [
-	{ id: 1, src: iron },
-	{ id: 2, src: glacier },
-	{ id: 3, src: ent },
+const projects = [
+	{
+		name: "Flow Ecommerce Store",
+		image: "/flow.PNG",
+		video: "/flow-scommerce.mp4",
+		github: "https://github.com/pantojao/Flow-Ecommerce",
+		class: " book-shadow",
+	},
+	{
+		name: "Nasa Image Generator",
+		image: "/nasa-app-pic.PNG",
+		video: "/nasa.mp4",
+		github: "https://github.com/pantojao/nasa-app",
+		class: " nasa-shadow",
+	},
+	{
+		name: "Pac-Man Search",
+		image: "/pac-man-image.PNG",
+		video: "/pacman.mp4",
+		github: "https://github.com/pantojao/pac-man-search",
+		class: " pac-shadow",
+	},
 ];
 
 const Projects = () => {
 	return (
-		<section className="container space-y-10">
-			<ul className="space-y-3 w-full flex flex-col justify-center items-center">
-				{items.map((item) => {
-					const tech = useRef(null);
-					const isVisible = useOnScreen(tech);
-					return (
-						<li ref={tech} key={item.id} className="w-1/2">
-							<Transition
-								show={isVisible}
-								enter="transition-translate duration-700"
-								enterFrom="-translate-x-96"
-								enterTo="translate-x-0">
-								<div className="shadow-md rounded-md px-6  h-80 relative">
-									<Image
-										src={item.src}
-										priority="true"
-										quality="50"
-										layout="fill"
-										objectFit="cover"
-									/>
-								</div>
-							</Transition>
-						</li>
-					);
-				})}
-			</ul>
+		<section className="mt-10 space-y-20 flex flex-col justify-center items-center container">
+			{/* <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-blue-800 p-2">
+				Featured Projects
+			</h1> */}
+			{projects.map((project) => (
+				<div
+					key={project.name}
+					className="flex flex-col justify-center items-center space-y-10 px-2">
+					<div className="flex justify-between items-center w-full ">
+						<h2 className="font-bold text-lg md:text-3xl">
+							{project.name}
+						</h2>
+						<img src="/github.svg" className="w-10 h-10" />
+					</div>
+
+					<div
+						className={
+							"relative shadow-lg rounded-md" +
+							project.class
+						}>
+						<video
+							preload="auto"
+							poster={project.image}
+							width="800px"
+							controls>
+							<source
+								src={project.video}
+								type="video/mp4"
+							/>
+						</video>
+					</div>
+				</div>
+			))}
 			<button className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 				<a href="/projects">See More</a>
 			</button>

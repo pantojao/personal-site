@@ -9,7 +9,7 @@ const navigation = [
 
 export default function Navbar() {
 	return (
-		<div className="relative p-6 w-full ">
+		<div className="relative p-6 w-full">
 			<Popover>
 				{({ open }) => (
 					<>

@@ -3,7 +3,7 @@ import Footer from "./Footer";
 
 const Layout = ({ children }) => {
 	return (
-		<div className="bg-gray-50 pb-6">
+		<div className="bg-gray-50 flex flex-col justify-center items-center">
 			<Navbar />
 			{children}
 			<Footer />
