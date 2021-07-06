@@ -2,7 +2,7 @@ import heroImage from "../../assets/heroImage.svg";
 
 const Hero = () => {
 	return (
-		<main className="lg:relative container">
+		<main className="lg:relative container m-20">
 			<div className="mx-auto max-w-7xl w-full text-center lg:text-left">
 				<div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
 					<span className="block text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
