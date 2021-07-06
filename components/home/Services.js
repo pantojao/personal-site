@@ -31,7 +31,9 @@ const Services = () => {
 					enterTo="opacity-100">
 					<div className="w-5/6 md:w-full mx-auto flex flex-wrap space-evenly">
 						{services.map((service) => (
-							<span className="inline-flex items-center px-4 py-3 text-sm font-medium bg-gray-100 rounded-full m-1">
+							<span
+								key={service}
+								className="inline-flex items-center px-4 py-3 text-sm font-medium bg-gray-100 rounded-full m-1">
 								{service}
 							</span>
 						))}

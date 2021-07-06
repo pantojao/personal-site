@@ -36,7 +36,9 @@ const Projects = () => {
 				Featured Projects
 			</h1>
 			{projects.map((project) => (
-				<div className="flex flex-col justify-center items-center space-y-10 px-2">
+				<div
+					key={project.name}
+					className="flex flex-col justify-center items-center space-y-10 px-2">
 					<div className="flex justify-between items-center w-full ">
 						<h2 className="font-bold text-lg md:text-3xl">
 							{project.name}

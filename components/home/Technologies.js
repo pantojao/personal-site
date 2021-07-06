@@ -7,13 +7,14 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import useOnScreen from "../onScreen";
 import { Transition } from "@headlessui/react";
+import image from "next/image";
 
 const technologies = [
-	typescript,
-	react,
-	python,
-	tailwind,
-	node,
+	{ id: 1, image: typescript },
+	{ id: 2, image: react },
+	{ id: 3, image: python },
+	{ id: 4, image: tailwind },
+	{ id: 5, image: node },
 ];
 
 const Technologies = () => {
@@ -38,13 +39,11 @@ const Technologies = () => {
 					<div
 						ref={techs}
 						className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-						{technologies.map((technology) => (
-							<div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-								<Image
-									src={technology}
-									width={75}
-									height={75}
-								/>
+						{technologies.map(({ id, image }) => (
+							<div
+								key={id}
+								className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+								<Image src={image} width={75} height={75} />
 							</div>
 						))}
 					</div>
