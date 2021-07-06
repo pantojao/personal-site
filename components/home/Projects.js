@@ -31,6 +31,8 @@ const Projects = () => {
 								<div className="shadow-md rounded-md px-6  h-80 relative">
 									<Image
 										src={item.src}
+										priority="true"
+										quality="50"
 										layout="fill"
 										objectFit="cover"
 									/>
