@@ -3,13 +3,13 @@ import useOnScreen from "../onScreen";
 import { Transition } from "@headlessui/react";
 
 const services = [
-	"Shopify",
-	"Wordpress",
 	"React",
 	"Web Templates",
 	"Web Scraping",
-	"PHP ",
+	"PHP",
 	"API Development",
+	"Shopify",
+	"Wordpress",
 	"Deployment",
 ];
 
