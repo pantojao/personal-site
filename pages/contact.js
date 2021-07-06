@@ -54,7 +54,7 @@ const navigation = [
 
 const Contact = () => {
 	return (
-		<main className="flex flex-col items-center w-full space-y-20 text-center red-outline">
+		<main className="flex flex-col items-center w-full space-y-20 text-center">
 			<Head>
 				<title>Joel's Portfolio</title>
 				<link rel="icon" href="/favicon.ico" />

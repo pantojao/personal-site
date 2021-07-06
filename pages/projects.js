@@ -2,7 +2,7 @@ const projects = [
 	{
 		name: "Flow Ecommerce Store",
 		image: "/flow.PNG",
-		video: "/flow-scommerce.mp4",
+		video: "/flow-ecommerce.mp4",
 		github: "https://github.com/pantojao/Flow-Ecommerce",
 		class: " book-shadow",
 	},

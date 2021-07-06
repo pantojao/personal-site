@@ -2,7 +2,7 @@ const projects = [
 	{
 		name: "Flow Ecommerce Store",
 		image: "/flow.PNG",
-		video: "/flow-scommerce.mp4",
+		video: "/flow-ecommerce.mp4",
 		github: "https://github.com/pantojao/Flow-Ecommerce",
 		class: " book-shadow",
 	},
@@ -24,10 +24,7 @@ const projects = [
 
 const Projects = () => {
 	return (
-		<section className="mt-10 space-y-20 flex flex-col justify-center items-center container">
-			{/* <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-blue-800 p-2">
-				Featured Projects
-			</h1> */}
+		<section className="space-y-20 flex flex-col justify-center items-center container">
 			{projects.map((project) => (
 				<div
 					key={project.name}
