@@ -1,5 +1,5 @@
 import ent from "./ent.JPG";
-import accounting from "./accounting.png";
+import accounting from "./accounting.PNG";
 import glacier from "./glacier.JPG";
 import iron from "./iron.JPG";
 
