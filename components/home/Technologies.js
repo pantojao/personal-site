@@ -1,31 +1,15 @@
-// import react from "../../assets/icons/react.svg";
-// import typescript from "../../assets/icons/typescript.svg";
-// import python from "../../assets/icons/python.svg";
-// import tailwind from "../../assets/icons/tailwindcss.svg";
-// import node from "../../assets/icons/nodedotjs.svg";
 import Image from "next/image";
 import React, { useRef } from "react";
 import useOnScreen from "../onScreen";
 import { Transition } from "@headlessui/react";
 
-
-// const technologies = [
-// 	{ id: 1, image: typescript },
-// 	{ id: 2, image: react },
-// 	{ id: 3, image: python },
-// 	{ id: 4, image: tailwind },
-// 	{ id: 5, image: node },
-// ];
-
-
 const technologies = [
-	{ id: 1, image: "/icons/react.svg" },
+	{ id: 1, image: "/react.svg" },
 	{ id: 2, image: "/typescript.svg" },
-	{ id: 3, image: "/icons/python.svg" },
-	{ id: 4, image: "/icons/tailwindcss.svg" },
-	{ id: 5, image: "/icons/nodedotjs.svg" },
+	{ id: 3, image: "/python.svg" },
+	{ id: 4, image: "/tailwindcss.svg" },
+	{ id: 5, image: "/nodedotjs.svg" },
 ];
-
 
 const Technologies = () => {
 	const techs = useRef(null);
@@ -64,4 +48,3 @@ const Technologies = () => {
 };
 
 export default Technologies;
-
