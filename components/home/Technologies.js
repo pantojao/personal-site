@@ -20,7 +20,7 @@ import { Transition } from "@headlessui/react";
 
 const technologies = [
 	{ id: 1, image: "/icons/react.svg" },
-	{ id: 2, image: "/icons/typescript.svg" },
+	{ id: 2, image: "/typescript.svg" },
 	{ id: 3, image: "/icons/python.svg" },
 	{ id: 4, image: "/icons/tailwindcss.svg" },
 	{ id: 5, image: "/icons/nodedotjs.svg" },

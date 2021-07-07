@@ -10,9 +10,8 @@ export default function Home() {
 	return (
 		<main className="flex flex-col items-center justify-center w-full space-y-20 mt-10 mb-20 text-center">
 			<Head>
-				<title>Create Next App</title>
+				<title>Joel Pantoja</title>
 				<link rel="icon" href="/favicon.ico" />
-				<script src="https://smtpjs.com/v3/smtp.js"></script>
 			</Head>
 			<Hero />
 			<Technologies />
