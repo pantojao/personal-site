@@ -82,8 +82,8 @@ export default function Navbar() {
 									<div className="px-5 pt-4 flex items-center justify-between">
 										<div>
 											<img
-												className="h-8 w-auto"
-												src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+												className="h-8 w-auto rounded-full"
+												src="/logo.png"
 												alt=""
 											/>
 										</div>
@@ -110,7 +110,7 @@ export default function Navbar() {
 										))}
 									</div>
 									<a
-										href="#"
+										href="/contact"
 										className="block w-full px-5 py-3 text-center font-medium  text-blue-600 bg-gray-50 hover:bg-gray-100">
 										Contact Me
 									</a>

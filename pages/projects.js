@@ -32,7 +32,7 @@ const projects = [
 const Projects = () => {
 	return (
 		<section className="mt-10 space-y-20 flex flex-col justify-center items-center">
-			<h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-blue-800 p-2">
+			<h1 className="text-5xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-blue-800 p-2">
 				Featured Projects
 			</h1>
 			{projects.map((project) => (
