@@ -33,7 +33,12 @@ const Projects = () => {
 						<h2 className="font-bold text-lg md:text-3xl">
 							{project.name}
 						</h2>
-						<img src="/github.svg" className="w-10 h-10" />
+						<a href={project.github} target="_blank">
+							<img
+								src="/github.svg"
+								className="w-10 h-10"
+							/>
+						</a>
 					</div>
 
 					<div
