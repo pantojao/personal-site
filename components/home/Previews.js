@@ -6,13 +6,14 @@ const items = [
 	// 	tech: ["Next.js", "Tailwind CSS"],
 	// },
 	{
-		name: "Inland Landing Page",
+		name: "Inland Taxes",
 		url: "/previews/inland-preview.png",
-		description: "This was a landing page built for accounting firm. ",
+		description:
+			"This was a landing page built for accounting firm. ",
 		tech: ["Next.js", "Tailwind CSS"],
 	},
 	{
-		name: "SunnySide Landing Page",
+		name: "SunnySide Landing",
 		url: "/previews/sunnyside-preview.jpg",
 		description: "This was built with nextjs",
 		tech: ["Next.js", "Tailwind CSS"],
@@ -33,7 +34,7 @@ const items = [
 
 const Previews = () => {
 	return (
-		<section class="space-y-14 container">
+		<section class="space-y-20 w-full container">
 			<h1 class="text-black font-bold text-5xl">
 				Featured Sites
 			</h1>
@@ -42,16 +43,26 @@ const Previews = () => {
 				return (
 					<article
 						class={
-							"relative container flex " +
+							"overflow-hidden relative container flex " +
 							(odd ? " flex-row-reverse " : "flex-row")
 						}>
 						<div
-							class="bg-no-repeat bg-cover bg-center"
+							className="relative"
 							style={{
-								backgroundImage: `url("${item.url}")`,
 								minWidth: "700px",
 								minHeight: "500px",
-							}}></div>
+							}}>
+							<img
+								src={item.url}
+								className="absolute object-cover"
+								style={{
+									minWidth: "700px",
+									minHeight: "500px",
+								}}
+							/>
+							<h1>{item.name}</h1>
+							<p>{item.description}</p>
+						</div>
 
 						<div
 							class={
@@ -60,12 +71,14 @@ const Previews = () => {
 							}>
 							<h2
 								class={
-									"text-4xl -top-24 text-black font-bold relative w-full " +
+									"text-3xl -top-24 text-black font-bold relative w-full " +
 									(odd ? "text-left" : "text-right")
 								}>
 								{item.name}
 							</h2>
-							<p class="text-black text-lg font-semibold">{item.description}</p>
+							<p class="text-black text-lg font-semibold">
+								{item.description}
+							</p>
 							<p class="text-black tracking-widest bottom-0 left">
 								{item.tech.join(", ")}
 							</p>
