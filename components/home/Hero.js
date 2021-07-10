@@ -1,6 +1,6 @@
 const Hero = () => {
 	return (
-		<section className="mt-10 mb-40 lg:mb-52 space-y-8 text-center">
+		<section className="mt-10 mb-40 lg:mb-20 space-y-8 text-center">
 			<span className="block text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
 				Hi my name is Joel Pantoja
 			</span>{" "}
