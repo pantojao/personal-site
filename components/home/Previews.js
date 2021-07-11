@@ -40,12 +40,9 @@ const items = [
 ];
 
 const Previews = () => {
-	// sm:bg-blue-300 md:bg-yellow-300 xl:bg-red-300sm:bg-blue-300 md:bg-yellow-300 xl:bg-red-300
 	return (
-		<section class="space-y-20 container ">
-			<h1 class="text-black font-bold text-5xl">
-				Featured Sites
-			</h1>
+		<section class="space-y-20 container text-black">
+			<h1 class="font-bold text-5xl">Featured Sites</h1>
 			{items.map((item, index) => {
 				const odd = index % 2 === 0;
 				return (
@@ -67,25 +64,24 @@ const Previews = () => {
 
 						<div
 							class={
-								"hidden lg:block text-white bg-white relative w-1/2 h-40 top-4 shadow-2xl " +
+								"hidden lg:block bg-white relative w-1/2 h-40 top-4 shadow-2xl " +
 								(odd ? "left-20" : "right-20")
 							}>
 							<h2
 								class={
-									"text-2xl xl:text-3xl -top-24 text-black font-bold absolute w-1/2 " +
-									(odd
-										? "text-left"
-										: " right-0 text-right")
+									"text-2xl xl:text-3xl -top-24 font-bold absolute w-1/2 " +
+									(odd ? "text-left" : "right-0 text-right")
 								}>
 								{item.name}
 							</h2>
 
-							{/* <p class="text-black text-lg font-semibold">
+							<p class="text-lg font-semibold">
 								{item.description}
 							</p>
-							<p class="text-black tracking-widest bottom-0 left">
+							<p class="tracking-widest bottom-0">
 								{item.tech.join(", ")}
 							</p>
+
 							<div
 								class={
 									"flex space-x-6 -bottom-14 absolute " +
@@ -97,7 +93,7 @@ const Previews = () => {
 									class="w-10"
 								/>
 								<img src="/export.svg" alt="" class="w-8" />
-							</div> */}
+							</div>
 						</div>
 					</article>
 				);
