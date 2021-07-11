@@ -33,3 +33,20 @@
 	--box-shadow-color: #fcd34d;
 	box-shadow: 0px 0px 17px var(--box-shadow-color);
 }
+
+@layer utilities {
+	@variants responsive {
+		.lg-img {
+			width: 700px;
+			height: 375px;
+		}
+		.md-img {
+			width: 500px;
+			height: 300px;
+		}
+		.sm-img {
+			width: 325px;
+			height: 175px;
+		}
+	}
+}
