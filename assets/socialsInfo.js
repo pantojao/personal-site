@@ -1,17 +1,10 @@
-import Head from "next/head";
-import React, { useState } from "react";
-import {
-	MailIcon,
-	PhoneIcon,
-} from "@heroicons/react/outline";
-
 const navigation = [
 	{
 		name: "Instagram",
 		href: "https://www.instagram.com/joelpantojaa/",
 		icon: (props) => (
 			<svg
-				fill="#E4405F"
+				fill="currentColor"
 				viewBox="0 0 24 24"
 				{...props}>
 				<path
@@ -27,7 +20,7 @@ const navigation = [
 		href: "https://twitter.com/joelpantojaa",
 		icon: (props) => (
 			<svg
-				fill="#1DA1F2"
+				fill="currentColor"
 				viewBox="0 0 24 24"
 				{...props}>
 				<path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
@@ -39,7 +32,7 @@ const navigation = [
 		href: "https://github.com/pantojao",
 		icon: (props) => (
 			<svg
-				fill="#181717"
+				fill="currentColor"
 				viewBox="0 0 24 24"
 				{...props}>
 				<path
@@ -56,7 +49,7 @@ const navigation = [
 		icon: (props) => (
 			<svg
 				role="img"
-				fill="#0A66C2"
+				fill="currentColor"
 				viewBox="0 0 24 24"
 				xmlns="http://www.w3.org/2000/svg"
 				{...props}>
@@ -67,80 +60,4 @@ const navigation = [
 	},
 ];
 
-const Contact = () => {
-	return (
-		<main className="flex flex-col items-center w-screen space-y-20 text-center">
-			<Head>
-				<title>Joel's Portfolio</title>
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
-			<h1 className="text-4xl font-extrabold tracking-tight text-warm-gray-900 sm:text-5xl lg:text-6xl">
-				Get in touch
-			</h1>
-			<section className="relative bg-white shadow-xl">
-				<h2 id="contactHeading" className="sr-only">
-					Contact us
-				</h2>
-
-				<div className="flex flex-col container">
-					{/* Contact information */}
-					<div className="relative overflow-hidden py-10 px-6 mx-auto bg-gradient-to-b from-teal-500 to-teal-600 sm:px-10 xl:p-12">
-						<h3 className="text-lg font-medium text-black">
-							Contact information
-						</h3>
-
-						<dl className="mt-8 space-y-6">
-							<dt>
-								<span className="sr-only">
-									Phone number
-								</span>
-							</dt>
-							{/* <dd className="flex text-base ">
-								<PhoneIcon
-									className="flex-shrink-0 w-6 h-6 text-teal-200"
-									aria-hidden="true"
-								/>
-								<span className="ml-3">
-									+1 (323) 984 4703
-								</span>
-							</dd> */}
-							<dt>
-								<span className="sr-only">Email</span>
-							</dt>
-							<dd className="flex text-base ">
-								<MailIcon
-									className="flex-shrink-0 w-6 h-6 text-teal-200"
-									aria-hidden="true"
-								/>
-								<span className="ml-3">
-									joelpantojaortega@gmail.com
-								</span>
-							</dd>
-						</dl>
-						<ul
-							className="mt-8 flex space-x-12"
-							role="list">
-							{navigation.map((item) => (
-								<li>
-									<a
-										key={item.name}
-										href={item.href}
-										className="text-teal-400 hover:0">
-										<span className="sr-only">
-											{item.name}
-										</span>
-										<item.icon
-											className="h-6 w-6"
-											aria-hidden="true"
-										/>
-									</a>
-								</li>
-							))}
-						</ul>
-					</div>
-				</div>
-			</section>
-		</main>
-	);
-};
-export default Contact;
+export default navigation
