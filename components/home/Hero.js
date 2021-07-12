@@ -1,15 +1,14 @@
 const Hero = () => {
 	return (
-		<section className="mt-10 mb-40 lg:mb-20 space-y-8 text-center">
+		<section className="mt-10 lg:mb-12 space-y-8 text-center">
 			<span className="block text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
 				Hi my name is Joel Pantoja
 			</span>{" "}
 			<h1 className="text-6xl tracking-tight font-extrabold text-gray-900">
 				I build on the web.
 			</h1>
-			<p class="text-md text-center">
-				I am developer currently located in Los Angeles CA.{" "}
-				<br />I focus on building user friendly, clean, and
+			<p class="text-md text-center md:w-3/4 mx-auto">
+				I am developer currently located in Los Angeles CA. I focus on building user friendly, clean, and
 				functional web apps and sites.
 			</p>
 			<div className="flex justify-center">

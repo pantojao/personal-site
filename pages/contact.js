@@ -54,7 +54,7 @@ const navigation = [
 
 const Contact = () => {
 	return (
-		<main className="flex flex-col items-center w-full space-y-20 text-center">
+		<main className="flex flex-col items-center w-screen space-y-20 text-center">
 			<Head>
 				<title>Joel's Portfolio</title>
 				<link rel="icon" href="/favicon.ico" />
@@ -80,7 +80,7 @@ const Contact = () => {
 									Phone number
 								</span>
 							</dt>
-							<dd className="flex text-base ">
+							{/* <dd className="flex text-base ">
 								<PhoneIcon
 									className="flex-shrink-0 w-6 h-6 text-teal-200"
 									aria-hidden="true"
@@ -88,7 +88,7 @@ const Contact = () => {
 								<span className="ml-3">
 									+1 (323) 984 4703
 								</span>
-							</dd>
+							</dd> */}
 							<dt>
 								<span className="sr-only">Email</span>
 							</dt>

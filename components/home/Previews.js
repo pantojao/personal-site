@@ -3,40 +3,43 @@ const items = [
 		name: "Utlimate Iron Crafts",
 		url: "/previews/iron.jpg",
 		description:
-			"This was a landing page built for accounting firm. ",
+			"Ultimate Iron Crafts is a welding company located in Rialto CA. I was responsible for designing and developing the site.  ",
+		tech: ["JQuery", "Sass"],
+	},
+
+	{
+		name: "Inland Taxes",
+		url: "/previews/inland-preview.png",
+		description:
+			"Inland Taxes is a tax firm located in the Inland Empire. This was the landing page site that I created for the firm. ",
 		tech: ["Next.js", "Tailwind CSS"],
 	},
 	{
 		name: "Insure Landing Page",
 		url: "/previews/insure-preview.jpg",
-		description: "This is a landing page for a ",
-		tech: ["Next.js", "Tailwind CSS"],
-	},
-	{
-		name: "Inland Taxes",
-		url: "/previews/inland-preview.png",
 		description:
-			"This was a landing page built for accounting firm. ",
-		tech: ["Next.js", "Tailwind CSS"],
+			"This is a professional landing page that I recreated with a template provided by Frontend Mentor. It is a project I used to develop my frontend skills.",
+		tech: ["HTML", "CSS"],
 	},
 	{
 		name: "SunnySide Landing",
 		url: "/previews/sunnyside-preview.jpg",
-		description: "This was built with nextjs",
+		description: "This is a modern design agency's landing page. The template was provided by Frontend Mentor.",
 		tech: ["Next.js", "Tailwind CSS"],
 	},
-	{
-		name: "FAQ",
-		url: "/previews/faq-preview.jpg",
-		description: "This was built with nextjs",
-		tech: ["Next.js", "Tailwind CSS"],
-	},
-	{
-		name: "Social Media Dashboard",
-		url: "/previews/dashboard-preview.jpg",
-		description: "Social Media Dashboard",
-		tech: ["Next.js", "Tailwind CSS"],
-	},
+
+	// {
+	// 	name: "FAQ",
+	// 	url: "/previews/faq-preview.jpg",
+	// 	description: "This was built with nextjs",
+	// 	tech: ["Next.js", "Tailwind CSS"],
+	// },
+	// {
+	// 	name: "Social Media Dashboard",
+	// 	url: "/previews/dashboard-preview.jpg",
+	// 	description: "Social Media Dashboard",
+	// 	tech: ["Next.js", "Tailwind CSS"],
+	// },
 ];
 
 const Previews = () => {
@@ -64,7 +67,7 @@ const Previews = () => {
 
 						<div
 							class={
-								"hidden lg:block bg-white relative w-1/2 h-40 top-4 shadow-2xl " +
+								"hidden lg:flex flex-col bg-white px-3 py-2 relative w-1/2 h-40 top-4 shadow-2xl " +
 								(odd ? "left-20" : "right-20")
 							}>
 							<h2
@@ -75,10 +78,10 @@ const Previews = () => {
 								{item.name}
 							</h2>
 
-							<p class="text-lg font-semibold">
+							<p class="text-lg text-left flex-grow">
 								{item.description}
 							</p>
-							<p class="tracking-widest bottom-0">
+							<p class="tracking-widest py-1 font-semibold self-end">
 								{item.tech.join(", ")}
 							</p>
 

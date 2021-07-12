@@ -44,7 +44,7 @@ const Projects = () => {
 
 					<div
 						className={
-							"relative shadow-lg rounded-md" +
+							"relative shadow-lg rounded-md " +
 							project.class
 						}>
 						<video
