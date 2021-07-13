@@ -1,4 +1,4 @@
-import items from '../assets/WebsitesInfo'
+import items from "../assets/WebsitesInfo";
 
 const Projects = () => {
 	return (
@@ -16,10 +16,10 @@ const Projects = () => {
 								? " lg:flex-row-reverse lg:justify-between"
 								: " lg:justify-between lg:flex-row")
 						}>
-						<div className="relative sm-img md:md-img lg:lg-img">
+						<div className="relative ">
 							<img
 								src={item.url}
-								className="absolute object-contain"
+								className="absolute sm-img md:md-img lg:lg-img object-contain"
 							/>
 							<h1>{item.name}</h1>
 							<p>{item.description}</p>
@@ -50,12 +50,17 @@ const Projects = () => {
 									"flex space-x-6 -bottom-14 absolute " +
 									(odd ? "left-2" : "right-2")
 								}>
-								<img
-									src="/github.svg"
-									alt=""
-									class="w-10"
-								/>
-								<img src="/export.svg" alt="" class="w-8" />
+								<a href="">
+									<img
+										src="/github.svg"
+										alt=""
+										class="w-7"
+									/>
+								</a>
+
+								<a href="">
+									<img src="/export.svg" alt="" class="w-6" />
+								</a>	
 							</div>
 						</div>
 					</article>

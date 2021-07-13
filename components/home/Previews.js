@@ -1,38 +1,37 @@
-import items from '../../assets/WebsitesInfo'
+import items from "../../assets/WebsitesInfo";
 const Previews = () => {
 	return (
-		<section class="space-y-20 container text-black">
-			<h1 class="font-bold text-5xl">Featured Sites</h1>
+		<section class="container text-black">
+			<h1 class="font-bold text-3xl lg:text-5xl my-10">
+				Featured Sites
+			</h1>
 			{items.map((item, index) => {
-				if (index > 2) return
+				if (index > 2) return;
 
 				const odd = index % 2 === 0;
 				return (
 					<article
 						class={
-							"overflow-hidden relative container items-center justify-center flex py-4" +
+							"mb-24 relative container items-center justify-center flex-col flex" +
 							(odd
 								? " lg:flex-row-reverse lg:justify-between"
 								: " lg:justify-between lg:flex-row")
 						}>
-						<div className="relative sm-img md:md-img lg:lg-img">
+							
+						<div>
 							<img
 								src={item.url}
-								className="absolute object-contain"
+								className="object-cover mx-auto sm-img md:md-img lg:lg-img "
 							/>
-							<h1>{item.name}</h1>
-							<p>{item.description}</p>
 						</div>
 
-						<div
-							class={
-								"hidden lg:flex flex-col bg-white px-3 py-2 relative w-1/2 h-40 top-4 shadow-2xl " +
-								(odd ? "left-20" : "right-20")
-							}>
+						<div class="flex flex-col bg-white px-5 py-2 relative lg:w-1/2 justify-center shadow-2xl">
 							<h2
 								class={
-									"text-2xl xl:text-3xl -top-24 font-bold absolute w-1/2 " +
-									(odd ? "text-left" : "right-0 text-right")
+									"text-2xl xl:text-3xl lg:-top-24 font-bold relative text-left lg:absolute lg:w-1/2 " +
+									(odd
+										? "lg:text-left"
+										: "lg:right-0 lg:text-right")
 								}>
 								{item.name}
 							</h2>
@@ -40,21 +39,30 @@ const Previews = () => {
 							<p class="text-lg text-left flex-grow">
 								{item.description}
 							</p>
-							<p class="tracking-widest py-1 font-semibold self-end">
+							<p class="tracking-widest py-1 font-semibold self-end bottom-0 relative">
 								{item.tech.join(", ")}
 							</p>
 
 							<div
 								class={
-									"flex space-x-6 -bottom-14 absolute " +
-									(odd ? "left-2" : "right-2")
+									"flex items-center space-x-6 self-end relative -bottom-14 " +
+									(odd ? "lg:self-start" : "lg:self-end")
 								}>
-								<img
-									src="/github.svg"
-									alt=""
-									class="w-10"
-								/>
-								<img src="/export.svg" alt="" class="w-8" />
+								<a href="">
+									<img
+										src="/github.svg"
+										alt=""
+										class="w-7"
+									/>
+								</a>
+
+								<a href="">
+									<img
+										src="/export.svg"
+										alt=""
+										class="w-6"
+									/>
+								</a>
 							</div>
 						</div>
 					</article>
@@ -69,3 +77,32 @@ const Previews = () => {
 };
 
 export default Previews;
+
+{
+	/* <div className="lg:hidden absolute top-0 space-y-3 flex flex-col items-center justify-center px-5 h-full z-20">
+								<h1 className="font-semibold text-lg md:text-4xl ">
+									{item.name}
+								</h1>
+								<p className="text-sm px-3 md:text-2xl">
+									{item.description}
+								</p>
+							</div>
+
+							<div className="lg:hidden space-x-4 flex relative justify-end items-end -bottom-2 right-6">
+								<a href="">
+									<img
+										src="/github.svg"
+										alt=""
+										className="w-7"
+									/>
+								</a>
+
+								<a href="">
+									<img
+										src="/export.svg"
+										alt=""
+										class="w-6"
+									/>
+								</a>
+							</div> */
+}
