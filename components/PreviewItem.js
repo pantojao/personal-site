@@ -23,7 +23,7 @@ const PreviewItem = ({max}) => {
 							/>
 						</div>
 
-						<div class="flex flex-col bg-white px-5 py-2 relative lg:w-1/2 justify-center shadow-2xl">
+						<div class="flex flex-col bg-white px-4 py-2 relative lg:w-1/2 justify-center shadow-2xl max-w-full">
 							<h2
 								class={
 									"text-2xl xl:text-3xl lg:-top-24 font-bold relative text-left lg:absolute lg:w-1/2 " +
@@ -34,13 +34,26 @@ const PreviewItem = ({max}) => {
 								{item.name}
 							</h2>
 
-							<p class="text-lg text-left flex-grow">
+							<p className="text-lg text-left flex-grow">
 								{item.description}
 							</p>
-							<p class="tracking-widest py-1 font-semibold self-end bottom-0 relative">
+							<p className="tracking-widest py-1 font-semibold self-end bottom-0 relative">
 								{item.tech.join(", ")}
 							</p>
+						</div>
+					</article>
+				);
+			})}
+		</>
+	);
+};
 
+
+export default PreviewItem;
+
+
+
+{/* 
 							<div
 								class={
 									"flex items-center space-x-6 self-end relative -bottom-14 " +
@@ -53,7 +66,6 @@ const PreviewItem = ({max}) => {
 										class="w-7"
 									/>
 								</a>
-
 								<a href="">
 									<img
 										src="/export.svg"
@@ -61,14 +73,4 @@ const PreviewItem = ({max}) => {
 										class="w-6"
 									/>
 								</a>
-							</div>
-						</div>
-					</article>
-				);
-			})}
-		</>
-	);
-};
-
-
-export default PreviewItem;
+							</div> */}

@@ -8,9 +8,9 @@ const CTA = () => {
 				work. Feel free to send me an email or message me on socials.
 			</p>
 			
-			<button className="inline-flex mr-2 items-center px-8 py-3 border border-transparent text-base font-medium rounded shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+			{/* <button className="inline-flex mr-2 items-center px-8 py-3 border border-transparent text-base font-medium rounded shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 				<a href="/projects">Email Me</a>
-			</button>
+			</button> */}
 			<button className="inline-flex mr-2 items-center px-9 py-3 border border-transparent text-base font-medium rounded shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 				<a href="/contact">Socials</a>
 			</button>

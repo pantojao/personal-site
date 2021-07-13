@@ -4,6 +4,7 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const navigation = [
 	// { name: "Personal Projects", href: "#" },
+	{ name: "Home", href: "/" },
 	{ name: "Projects", href: "/projects" },
 
 	// { name: 'About Me', href: '#' },
@@ -21,7 +22,9 @@ export default function Navbar() {
 								aria-label="Global">
 								<div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
 									<div className="flex items-center justify-between w-full md:w-auto">
-										<a href="/" className="border border-blue-400 border-2 rounded-full py-2 px-3 font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-blue-900">
+										<a
+											href="/"
+											className="border border-blue-400 border-2 rounded-full py-2 px-3 font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-blue-900">
 											JP
 										</a>
 
