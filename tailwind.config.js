@@ -8,8 +8,11 @@ module.exports = {
 	theme: {
 		extend: {
 			brightness: {
-				40: '.40'
-			}
+				40: ".40",
+			},
+		},
+		fontFamily: {
+			body: ["Source Sans Pro", "sans-serif"],
 		},
 	},
 	variants: {
