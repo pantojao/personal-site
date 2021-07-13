@@ -1,9 +1,9 @@
 const CTA = () => {
 	return (
-		<section className="space-y-6 lg:space-x-4 md:w-1/2 mx-auto">
-			<h2 className="text-3xl md:text-6xl font-bold">Get In Touch</h2>
+		<section className="md:w-1/2 mx-auto">
+			<h2 className="header">Get In Touch</h2>
 
-			<p className="text-md md:text-2xl text-gray-700">
+			<p className="text-md my-6 md:text-2xl text-gray-700">
 				Thank you for taking the time to view some of my
 				work. Feel free to send me an email or message me on socials.
 			</p>

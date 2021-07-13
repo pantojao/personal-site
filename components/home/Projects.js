@@ -3,7 +3,7 @@ import projects from '../../assets/ProjectInfo'
 const Projects = () => {
 	return (
 		<section className="flex flex-col justify-center items-center container">
-			<h1 className="text-center my-10 text-3xl lg:text-5xl font-bold ">Personal Projects</h1>
+			<h1 className="header">Personal Projects</h1>
 			{projects.map((project) => (
 				<div
 					key={project.name}
