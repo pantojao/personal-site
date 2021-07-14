@@ -4,7 +4,7 @@ const Hero = () => {
 			<span className="block text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
 				Hi my name is Joel Pantoja
 			</span>{" "}
-			<h1 className="text-6xl tracking-tight font-extrabold font-body text-gray-900">
+			<h1 className="text-6xl tracking-tight font-extrabold  text-gray-900">
 				I build on the web.
 			</h1>
 			<p class="text-md text-center md:w-3/4 mx-auto">

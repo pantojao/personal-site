@@ -5,7 +5,7 @@ import Head from "next/head";
 
 const Layout = ({ children }) => {
 	return (
-		<div className="overflow-x-hidden flex flex-col justify-center items-center font-mont px-2 ">
+		<div className="overflow-x-hidden flex flex-col justify-center items-center font-mont px-2">
 			<Head>
 				<link
 					rel="preconnect"
@@ -16,7 +16,10 @@ const Layout = ({ children }) => {
 					href="https://fonts.gstatic.com"
 					crossorigin
 				/>
-				<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+				<link
+					href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap"
+					rel="stylesheet"
+				/>
 			</Head>
 			<Navbar />
 			{children}

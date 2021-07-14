@@ -3,7 +3,7 @@ import navigation from '../assets/socialsInfo'
 
 const Footer = () => {
 	return (
-		<footer className="container md:flex md:items-center md:justify-between mb-8 mt-16 lg:px-12">
+		<footer className="container md:flex md:items-center md:justify-between relative bottom-5 mt-10 lg:px-12">
 			<div className="flex justify-center space-x-6 md:order-2">
 				{navigation.map((item) => (
 					<a

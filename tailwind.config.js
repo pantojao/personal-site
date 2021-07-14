@@ -14,6 +14,11 @@ module.exports = {
 				mont: ["Montserrat", "sans-serif"],
 				body: ["Open Sans", "sans-serif"],
 			},
+			fontWeight: {
+				normal: 500,
+				bold: 700,
+				extrabold: 800,
+			}
 		},
 	},
 	variants: {

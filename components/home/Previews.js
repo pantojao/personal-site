@@ -1,15 +1,16 @@
 import PreviewItem from "../PreviewItem";
+import Link from "next/link";
+
 const Previews = () => {
 	return (
 		<section class="container text-black">
-			<h1 class="header">
-				Featured Sites
-			</h1>
-			
+			<h1 class="header">Featured Sites</h1>
 			<PreviewItem max={2} />
-			<button className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-				<a href="/projects">See More</a>
-			</button>
+			<Link href="/projects">
+				<button className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+					See More
+				</button>
+			</Link>
 		</section>
 	);
 };
