@@ -10,9 +10,10 @@ module.exports = {
 			brightness: {
 				40: ".40",
 			},
-		},
-		fontFamily: {
-			body: ["Source Sans Pro", "sans-serif"],
+			fontFamily: {
+				mont: ["Montserrat", "sans-serif"],
+				body: ["Open Sans", "sans-serif"],
+			},
 		},
 	},
 	variants: {
