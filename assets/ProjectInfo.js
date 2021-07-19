@@ -7,6 +7,13 @@ const projects = [
 		class: " book-shadow",
 	},
 	{
+		name: "Gainz Tracker",
+		image: "/projects/gainz-app-pic.PNG",
+		video: "/projects/gainz.mp4",
+		github: "https://github.com/pantojao/gainz-tracker",
+		class: " pac-shadow",
+	},
+	{
 		name: "Nasa Image Generator",
 		image: "/projects/nasa-app-pic.PNG",
 		video: "/projects/nasa.mp4",
@@ -22,4 +29,4 @@ const projects = [
 	},
 ];
 
-export default projects 
+export default projects;
